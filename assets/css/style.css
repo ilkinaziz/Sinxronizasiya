@@ -1,13 +1,30 @@
-* {
+* ::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto";
+
+  outline: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --main-font: "Roboto", sans-serif, serif;
+  --main-color: color: #000000;
+  --container: 144rem;
 }
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 130%;
+  color: var(--main-color);
 }
 
 .logo {
